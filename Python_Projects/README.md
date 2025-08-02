@@ -42,13 +42,13 @@ This project simulates AWS EC2 instance lifecycle operations using advanced Pyth
 ```bash
 python ec2_manager.py
 ------------------
-# 🪣 S3 Bucket Simulator (Python OOP)
+# S3 Bucket Simulator (Python OOP)
 
 A Python-based simulation of AWS S3 bucket operations using advanced Object-Oriented Programming (OOP) principles. This project is ideal for showcasing your OOP skills in a cloud-focused, DevOps-style use case.
 
 ---
 
-## 📌 Features
+## Features
 
 - Create multiple simulated S3 buckets with names and regions
 - Upload, list, and delete files within each bucket
@@ -60,7 +60,7 @@ A Python-based simulation of AWS S3 bucket operations using advanced Object-Orie
 
 ---
 
-## 🧠 OOP Concepts Demonstrated
+## OOP Concepts Demonstrated
 
 | OOP Principle     | Where It's Used                                         |
 |------------------|----------------------------------------------------------|
@@ -76,7 +76,7 @@ A Python-based simulation of AWS S3 bucket operations using advanced Object-Orie
 
 ---
 
-## 🏗️ File Structure
+## File Structure
 # S3 Bucket Simulator (Python OOP Project)
 
 This project simulates core AWS S3 bucket operations using advanced Python object-oriented programming (OOP) principles. It is designed to demonstrate OOP patterns in a DevOps/Cloud engineering context.
@@ -106,3 +106,47 @@ This project simulates core AWS S3 bucket operations using advanced Python objec
 | Exception Handling | Handles invalid operations and missing files gracefully     |
 
 ## File Structure
+------------------
+# Kubernetes Pod Simulator (Python OOP Project)
+
+This project simulates the lifecycle of Kubernetes Pods using advanced Python object-oriented programming (OOP) concepts. It provides a lightweight model of pod creation, management, and deletion, making it an excellent demonstration of applying OOP in a DevOps/Cloud engineering context.
+
+## Features
+
+- Create Pods with containers and namespaces
+- Start, stop, and delete Pods
+- Add containers dynamically to a Pod
+- List all Pods in a cluster
+- List containers inside a Pod
+- Retrieve Pod metadata (ID, name, creation time)
+- Enforce naming validation for containers
+- Includes safety checks for invalid state transitions
+
+## OOP Concepts Covered
+
+| Concept           | Usage                                                       |
+|-------------------|-------------------------------------------------------------|
+| Abstraction        | `K8sResource` abstract base class defines pod behavior     |
+| Inheritance        | `Pod` class inherits from `K8sResource`                   |
+| Encapsulation      | Private attributes for namespace, containers, and status   |
+| Polymorphism       | Overridden lifecycle methods (`start`, `stop`, `delete`)   |
+| Composition        | `K8sCluster` manages multiple `Pod` instances              |
+| Static Methods     | Container name validation logic                            |
+| Class Methods      | Create Pods from configuration dictionaries                |
+| Dunder Methods     | `__str__` and `__repr__` for better object representation  |
+| Exception Handling | Raises errors for invalid operations and missing pods      |
+
+## File Structure
+
+
+## How to Run
+
+This project requires Python 3.7 or higher.
+
+1. Clone or download this repository.
+2. Open a terminal in the project directory.
+3. Run the script:
+
+```bash
+python k8s_pod_simulator.py
+
